@@ -469,6 +469,28 @@ footer {
     display: none;
   }
 }
+/* Language Switcher*/
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 70rem;
+}
+
+.lang-switch a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background-color: var(--color-login);
+  font-size: 0.95rem;
+}
+
+.lang-switch a.active {
+  background-color: #fff;
+  color: black;
+}
 
 /* Responsive para textos y elementos generales */
 @media (max-width: 600px) {

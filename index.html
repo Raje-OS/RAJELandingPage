@@ -27,13 +27,18 @@
       </div>
     
       <nav id="nav">
-        <a href="#inicio" class="active">HOME</a>
-        <a href="#contenido">CONTENT</a>
-        <a href="#comunidad">COMMUNITY</a>
-        <a href="#rajes">RAJE</a>
+        <a href="#inicio" class="active" data-i18n="nav-home">HOME</a>
+
+        <a href="#contenido"  class="active" data-i18n="nav-content">CONTENT</a>
+        <a href="#comunidad" class="active" data-i18n="nav-community">COMMUNITY</a>
+        <a href="#rajes" class="active" data-i18n="nav-raje">RAJE</a>
       </nav>
-    
-      <button class="login-btn">log in</button>
+      <div class="lang-switch">
+        <a href="#" data-lang="es" class="active">ES</a>
+        <a href="#" data-lang="en">EN</a>
+      </div>
+
+      <button class="login-btn" data-i18n="login">log in</button>
     </header>
     
 
@@ -71,7 +76,7 @@
       </div>
     
       <div class="cta-button">
-        <button>INICIA AHORA<br />NO SE COBRAN CUPOS</button>
+        <button data-i18n="cta">INICIA AHORA<br />NO SE COBRAN CUPOS</button>
       </div>
     </section>
     
@@ -191,7 +196,7 @@
         </div>
 
         <div class="mensaje-comunidad">
-          <p>
+          <p data-i18n="comunidad-texto">
             Formá parte de una comunidad vibrante y auténtica, donde nadie se
             guarda lo que piensa y las recomendaciones sobre series, películas y
             libros fluyen sin filtros. En Raje, no solo compartimos opiniones:
@@ -207,8 +212,8 @@
         <div class="sobre-logo">
           <img src="assets/RAJE-LOGO.png" alt="Logo de RAJE" />
         </div>
-        <div class="sobre-descripcion">
-          <p>
+        <div class="sobre-descripcion" >
+          <p data-i18n="sobre-texto">
             Raje de Caleta Innovations es la plataforma donde podés rajar sin
             roche sobre pelis, series, libros y más. Acá se habla claro, sin
             floro. Opinás, calificás y te recomendamos cosas que de verdad van
@@ -221,21 +226,24 @@
     </section>
 
     <footer>
-      <div>RAJE - Sin censura, con estilo.</div>
-      <div class="footer-columns">
-        <div>
-          <strong>NAVEGACIÓN</strong><br />
-          Películas<br />Series<br />Libros
-        </div>
-        <div>
-          <strong>COMUNIDAD</strong><br />
-          Instagram<br />TikTok<br />Discord
-        </div>
-        <div>
-          <strong>© Caleta Innovations</strong><br />
-          Raje es libertad
-        </div>
+      <div> <span data-i18n="footer-eslogan">RAJE - Sin censura, con estilo.</span> </div>
+      <div>
+        <strong data-i18n="footer-nav">NAVEGACIÓN</strong><br />
+        <span data-i18n="footer-peliculas">Películas</span><br />
+        <span data-i18n="footer-series">Series</span><br />
+        <span data-i18n="footer-libros">Libros</span>
       </div>
+      <div>
+        <strong data-i18n="footer-comunidad">COMUNIDAD</strong><br />
+        <span>Instagram</span><br />
+        <span>TikTok</span><br />
+        <span>Discord</span>
+      </div>
+      <div>
+        <strong>© Caleta Innovations</strong><br />
+        <span data-i18n="footer-lema">Raje es libertad</span>
+      </div>
+
     </footer>
 
     <script>
@@ -249,4 +257,5 @@
 
   </body>
 </html>
+<script src="script.js"></script>
 
